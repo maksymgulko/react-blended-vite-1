@@ -14,7 +14,7 @@ export const Statistics = ({ stats, title }) => {
 
   return (
     <div>
-      <h3 className={style.title}>Main Statistics</h3>
+      {title && <h3 className={style.title}>{title}</h3>}
       <ul className={style.list}>
         {stats.map(item => {
           return (
